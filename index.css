@@ -12,7 +12,7 @@ body {
   top: 0px;
   right: 0px;
   width: 100%;
-  height: 75px;
+  max-height: 75px;
   background: radial-gradient(circle, #242F40 40%, hsl(216, 28%, 10% ) 80%);
   z-index: 2;
   opacity: 1;
@@ -22,7 +22,11 @@ body {
 .nav-links {
   float: right;
   position: relative;
+  top: 0px;
+  right: 0px;
   height: inherit;
+  max-width: 380px;
+  overflow: visible;
 }
 .nav-link {
   display: inline;
@@ -37,62 +41,64 @@ body {
   position: relative;
   text-decoration: none;
   color: inherit;
-  font-size: 30px;
+  /*font-size: 30px;*/
+  font-size: 2.5vmin;
   font-weight: lighter;
   background-color: rgba(0,0,0,0.3);
   padding: 7px 7px 7px 7px;
   border: 2px solid rgba(229,229,229, 0.6);
   border-radius: 20px;
-  box-shadow: 6px 6px 4px rgba(0,0,0,0.6);
+  box-shadow: 0.6vmin 0.6vmin 0.3vmin rgba(0,0,0,0.6);
 }
 .anchor-style:hover {
   color: #E5E5E5;
   background-color: rgba(229,229,229, 0.6);
 }
 .welcome-style {
-  height: 750px;
+  height: 75vh;
   background-color: #CCA43B;
   overflow: auto;
   text-align: center;
-  text-shadow: 4px 4px 1px hsl(43, 59%, 30%);
+  text-shadow: 0.5vmin 0.5vmin 0.2vmin hsl(43, 59%, 30%);
 }
 .welcome-message {
   position: relative;
-  font-size: 65px;
+  font-size: 6.5vmin;
   top: 30%;
   font-style: italic;
   color: #E5E5E5;
  }
 .web-development {
   color: #242F40;
-  font-size: 60px;
+  font-size: 6vmin;
 }
 #projects {
   position: relative;
   width: 100%;
-  height: 950px;
+  height: 95vh;
   border-top: 10px solid rgba(229,229,229, 0.8);
   border-bottom: 10px solid rgba(229,229,229, 0.8);
 }
 #project-grid {
   position: relative;
-  top: 20px;
+  top: 2vh;
   margin: auto;
   width: 85%;
-  height: 900px;
+  height: 90vh;
   display: grid;
   grid-template-columns: 45% 45%;
-  grid-template-rows: 400px 400px;
-  grid-gap: 100px 10%;
+  grid-template-rows: 45% 45%;
+  grid-gap: 10% 10%;
 }
 .project-tile {
+  position: relative;
   background-color: white;
   overflow: hidden;
   border: 5px solid #CCA43B;
   border-radius: 15px;
   display: flex;
   flex-direction: column-reverse;
-  box-shadow: 10px 10px 4px rgba(0,0,0,0.7);
+  box-shadow: 1.5vmin 1.5vmin 0.6vmin rgba(0,0,0,0.7);
 }
 .project-embed {
   display: block;
@@ -100,19 +106,10 @@ body {
   height: 100%;
   width: calc(100% + 17px);
 }
-.subject {
-  position: relative;
-  bottom: 15px;
-  color: #242F40;
-}
-.grid-links {
-  text-decoration: none;
-  color: inherit;
-}
 #contact {
   position: relative;
   background: #CCA43B;
-  height: 350px;
+  height: 36vh;
   margin: 0;
   padding: 0;
 }
@@ -122,39 +119,39 @@ body {
   display: flex;
   flex-direction:row-reverse;
   padding: 0;
-  top: 200px;
+  top: 20vh;
   width: 100%;
   text-align: center;
   justify-content: center;
 }
 #link-image {
   position: relative;
-  width: 300px;
-  height: 121px;
-  filter: drop-shadow(3px 3px 1px rgba(0,0,0,0.3));
+  width: auto;
+  height: 12.5vh;
+  filter: drop-shadow(0.35vmin 0.35vmin 0.1vmin rgba(0,0,0,0.3));
 }
 #mail-img {
   position: relative;
-  height: 121px;
-  width: 121px;
-  filter: drop-shadow(3px 3px 1px rgba(0,0,0,0.3));
+  height: 12.5vh;
+  width: auto;
+  filter: drop-shadow(0.35vmin 0.35vmin 0.1vmin rgba(0,0,0,0.3));
 }
 #link-image:hover {
-  width: 295px;
-  height: auto;
+  width: auto;
+  height: 12.2vh;
   filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.7));
 }
 #mail-img:hover {
-  width: 116px;
-  height: auto;
+  width: auto;
+  height: 12.2vh;
   filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.7));
 }
 #footer {
   position: relative;
   text-align: center;
-  font-size: 22px;
+  font-size: 2.5vmin;
   font-style: italic;
-  height: 180px;
+  height: 18.6vh;
   margin: 0;
   padding: 0;
   border: none;
@@ -168,47 +165,4 @@ body {
 }
 #go-top:hover {
   color: red;
-}
-@media (max-width: 720px) {
-  .anchor-style {
-    font-size: 18px;
-  }
-  .welcome-message {
-    font-size: 55px;
-  }
-  .web-development {
-    font-size: 50px;
-  }
-  #projects {
-    height: 600px;
-  }
-  #project-grid {
-    height: 550px;
-    grid-template-rows: 225px 225px;
-  }
-  #link-image {
-    position: relative;
-    width: 240px;
-    height: 98.8px;
-    filter: drop-shadow(3px 3px 1px rgba(0,0,0,0.3));
-  }
-  #mail-img {
-    position: relative;
-    height: 98.8px;
-    width: 98.8px;
-    filter: drop-shadow(3px 3px 1px rgba(0,0,0,0.3));
-  }
-  #link-image:hover {
-    width: 236px;
-    height: auto;
-    filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.7));
-  }
-  #mail-img:hover {
-    width: 93.8px;
-    height: auto;
-    filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.7));
-  }
-#go-top {
-  font-size: 0.8em;
-  }
 }
