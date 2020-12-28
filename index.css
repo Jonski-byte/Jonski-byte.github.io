@@ -58,15 +58,8 @@ body {
   background-color: rgba(229,229,229, 0.6);
 }
 .anchor-style:active {
-  -webkit-animation-name: click;
-  -webkit-animation-duration: 0.5s;
   animation-name: click;
   animation-duration: 0.5s;
-}
-@-webkit-keyframes click {
-  0% {-webkit-font-size: 2.5vmin;}
-  50% {-webkit-font-size: 2.1vmin;}
-  100% {-webkit-font-size: 2.5vmin;}
 }
 @keyframes click {
   0% {font-size: 2.5vmin;}
