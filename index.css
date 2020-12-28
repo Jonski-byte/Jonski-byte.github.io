@@ -57,6 +57,15 @@ body {
   color: #E5E5E5;
   background-color: rgba(229,229,229, 0.6);
 }
+.anchor-style:active {
+  animation-name: click;
+  animation-duration: 0.5s;
+}
+@keyframes click {
+  0% {font-size: 2.5vmin;}
+  50% {font-size: 2.1vmin;}
+  100% {font-size: 2.5vmin;}
+}
 .welcome-style {
   height: 75vh;
   background-color: #CCA43B;
