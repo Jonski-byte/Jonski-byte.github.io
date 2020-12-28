@@ -61,10 +61,10 @@ body {
   animation-name: click;
   animation-duration: 0.5s;
 }
-@keyframes click {
-  0% {font-size: 2.5vmin;}
-  50% {font-size: 2.1vmin;}
-  100% {font-size: 2.5vmin;}
+@-webkit-keyframes click {
+  0% {-webkit-font-size: 2.5vmin;}
+  50% {-webkit-font-size: 2.1vmin;}
+  100% {-webkit-font-size: 2.5vmin;}
 }
 .welcome-style {
   height: 75vh;
