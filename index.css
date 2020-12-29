@@ -152,23 +152,23 @@ body {
   position: relative;
   width: auto;
   height: 12.5vh;
-  filter: opacity(85%);
+  filter: opacity(75%);
 }
 #mail-img {
   position: relative;
   height: 12.5vh;
   width: auto;
-  filter: opacity(85%);
+  filter: opacity(75%);
 }
 #link-image:hover {
   width: auto;
   height: 12.2vh;
-  filter: opacity(85%);
+  filter: opacity(75%);
 }
 #mail-img:hover {
   width: auto;
   height: 12.2vh;
-  filter: opacity(85%);
+  filter: opacity(75%);
 }
 #footer {
   position: relative;
