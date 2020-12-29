@@ -134,36 +134,41 @@ body {
 }
 #contact-wrap {
   position: relative;
-  margin: 0;
+  margin: auto;
   display: flex;
   flex-direction:row-reverse;
   padding: 0;
   top: 20vh;
-  width: 100%;
+  width: 15vw;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+@media (max-width: 900px) {
+  #contact-wrap {
+    width: 35vw;
+  }
 }
 #link-image {
   position: relative;
   width: auto;
   height: 12.5vh;
-  filter: drop-shadow(0.35vmin 0.35vmin 0.1vmin rgba(0,0,0,0.3));
+  filter: opacity(85%);
 }
 #mail-img {
   position: relative;
   height: 12.5vh;
   width: auto;
-  filter: drop-shadow(0.35vmin 0.35vmin 0.1vmin rgba(0,0,0,0.3));
+  filter: opacity(85%);
 }
 #link-image:hover {
   width: auto;
   height: 12.2vh;
-  filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.7));
+  filter: opacity(85%);
 }
 #mail-img:hover {
   width: auto;
   height: 12.2vh;
-  filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.7));
+  filter: opacity(85%);
 }
 #footer {
   position: relative;
